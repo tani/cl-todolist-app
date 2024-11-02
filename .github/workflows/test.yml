@@ -16,7 +16,6 @@ jobs:
         lisp:
           - ecl
           - sbcl
-          - abcl
         os:
           - ubuntu-latest
           - macos-latest
