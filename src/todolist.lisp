@@ -5,6 +5,8 @@
            #:render-list
            #:add-list
            #:remove-list
+           #:*counter*
+           #:*database*
            #:main))
 (in-package #:todolist/src/todolist)
 
