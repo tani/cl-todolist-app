@@ -2,6 +2,8 @@
 
 This repository contains a common lisp project for a simple todo list.
 
+![image](https://github.com/user-attachments/assets/7d880c83-379f-4468-9c07-044fa845dd07)
+
 ## Usage
 
 ### Run entrypoint
