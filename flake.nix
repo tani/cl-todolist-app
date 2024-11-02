@@ -26,6 +26,7 @@
         hunchentoot
         spinneret
         parachute
+        cl-ppcre
       ];
       ## Non-Lisp dependencies
       nativeLibs = with pkgs; [

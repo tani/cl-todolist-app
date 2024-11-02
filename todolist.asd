@@ -7,6 +7,6 @@
   :in-order-to ((test-op (test-op #:todolist/test))))
 
 (defsystem #:todolist/test
-  :depends-on (#:parachute #:todolist/test/todolist)
+  :depends-on (#:cl-ppcre #:parachute #:todolist/test/todolist)
   :perform (test-op (o c)
              (symbol-call :parachute :test :todolist/test/todolist)))
