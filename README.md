@@ -1,6 +1,6 @@
-# Nix templates for Common Lisp projects
+# Todo List written in Common Lisp
 
-This repository contains a Nix template for Common Lisp projects.
+This repository contains a common lisp project for a simple todo list.
 
 ## Usage
 
@@ -15,7 +15,6 @@ nix run .#main-sbcl
 
 - `.#main-sbcl`: Run the entrypoint using SBCL.
 - `.#main-ecl`: Run the entrypoint using ECL.
-- `.#main-abcl`: Run the entrypoint using ABCL.
 
 ### Run tests
 
@@ -31,7 +30,6 @@ Thanks to [Shinmera](https://github.com/Shinmera) for this great library.
 
 - `.#test-sbcl`: Run all tests using SBCL.
 - `.#test-ecl`: Run all tests using ECL.
-- `.#test-abcl`: Run all tests using ABCL.
 
 
 ### Run REPL
@@ -49,30 +47,6 @@ To load the project, you can use the following code:
 (load (uiop:getenv "ASDF"))
 (require :todolist)
 ```
-
-### Use library
-
-This project exports the following libraries:
-
-- `packages.lib-sbcl`: library for SBCL.
-- `packages.lib-ecl`: library for ECL.
-- `packages.lib-abcl`: library for ABCL.
-
-## Development
-
-First, you need to rename the project name.
-We attached the rename script for this purpose.
-
-```sh
-vim ./rename.sh # Edit the project name
-./rename.sh
-```
-
-Then, you might update the dependency (`lispLibs`)
-and version (`version`) of the project in the `flake.nix` file.
-
-Now you can start developing your project.
-Note that this project uses _package-inferred-system_.
 
 ## License
 
